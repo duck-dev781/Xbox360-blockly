@@ -1,15 +1,18 @@
 [package]
 name="xbox360-blockly"
-version="0.1.0"
+version="0.2.0"
 description="Lightweight Xbox 360 Blockly editor"
 authors=["duck-dev781"]
 edition="2021"
+
 [build-dependencies]
 tauri-build={version="1.5.1",features=[]}
+
 [dependencies]
 tauri={version="1.8.3",features=["dialog-save","dialog-open","fs-write-file","fs-read-file","shell-open"]}
 serde={version="1",features=["derive"]}
 serde_json="1"
 reqwest={version="0.11",features=["blocking","json","rustls-tls"]}
+
 [features]
 custom-protocol=["tauri/custom-protocol"]
